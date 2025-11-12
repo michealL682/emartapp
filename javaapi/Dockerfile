@@ -1,4 +1,4 @@
-FROM openjdk:8 AS BUILD_IMAGE
+FROM eclipse-temurin:8-jdk AS BUILD_IMAGE
 WORKDIR /usr/src/app/
 RUN apt update && apt install maven -y
 COPY ./ /usr/src/app/
